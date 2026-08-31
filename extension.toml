@@ -1,0 +1,7 @@
+[extension]
+id = "markdown_tools"
+name = "Markdown Tools"
+version = "0.1.0"
+description = "Markdown Tools extension for Biscuit"
+author = "biscuit-extensions"
+icon = "icon.png"
