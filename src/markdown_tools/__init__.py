@@ -8,6 +8,8 @@ if typing.TYPE_CHECKING:
     from biscuit.api import ExtensionsAPI
 
 
-def setup(api: "ExtensionsAPI") -> None:
+def setup(api: "ExtensionsAPI") -> MarkdownTools:
     """Entrypoint for Biscuit to load the extension."""
-    api.register("markdown_tools", MarkdownTools(api))
+    ext = MarkdownTools(api)
+    api.register("markdown_tools", ext)
+    return ext

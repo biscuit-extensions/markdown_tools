@@ -1,7 +1,19 @@
 [extension]
 id = "markdown_tools"
 name = "Markdown Tools"
-version = "0.1.0"
-description = "Markdown Tools extension for Biscuit"
-author = "biscuit-extensions"
+version = "0.2.0"
+description = "Markdown table formatter, Table of Contents generator, and document outline parser"
+author = "tomlin7"
 icon = "icon.png"
+
+[dependencies]
+python = []
+tools = []
+
+[contributes]
+commands = [
+    { id = "markdown.format_table", title = "Markdown: Format Table", category = "Markdown" },
+    { id = "markdown.generate_toc", title = "Markdown: Generate Table of Contents", category = "Markdown" },
+    { id = "markdown.extract_outline", title = "Markdown: Extract Document Outline", category = "Markdown" },
+    { id = "markdown.insert_link", title = "Markdown: Insert Link", category = "Markdown" }
+]
